@@ -9,7 +9,7 @@ from operations.schemas import OperationCreate
 
 router = APIRouter(prefix="/operations", tags=["Operation"])
 
-#fdsfs
+
 @router.get("/")
 async def get_specific_operations(
     operation_type: str, session: AsyncSession = Depends(get_async_session)
